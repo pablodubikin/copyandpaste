@@ -1,0 +1,16 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="pab">
+		<pattern value="/#{id}" />
+		<view-id value="/app/welcome/welcomePageDefault.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="pablos">
+		<pattern value="/pab" />
+		<view-id value="/app/welcome/welcomePageDefault.xhtml" />
+	</url-mapping>
+
+</pretty-config>

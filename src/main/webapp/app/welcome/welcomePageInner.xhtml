@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j">
+
+<h:form id="my-forms-id">
+
+	<h:outputScript id="refreshScript">
+	function onEntryMessage(message, channel, event){
+		onMessageMine("#{entryBean.sSId}#{entryBean.tabId}", "#{entryBean.entry.id}", message, channel, event);
+	}
+	</h:outputScript>
+
+	<div class="form-group pl-1 pr-1" style="height: 99%;">
+		<h:inputTextarea id="main-textarea" styleClass="form-control h-100 main-textarea"
+			value="#{entryBean.entry.content}"
+			onkeyup="updateContent($(this).val());">
+		</h:inputTextarea>
+	</div>
+
+	<a4j:jsFunction name="updateContent"
+		action="#{entryBean.updateContent(newContent)}">
+		<a4j:param name="newContent" assignTo="#{newContent}"></a4j:param>
+	</a4j:jsFunction>
+
+	<f:websocket channel="entryChannel" onclose="websocketCloseListener" onmessage="onEntryMessage" />
+</h:form>
+
+</ui:composition>

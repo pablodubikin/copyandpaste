@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	
+	<class name="pab.showcase.model.Entry" table="entry">
+		
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity"></generator>
+		</id>
+		
+		<property name="content" type="string">
+			<column name="content" />
+		</property>
+		
+		<property name="addDate" type="org.jadira.usertype.dateandtime.joda.PersistentDateTime">
+			<column name="add_date" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

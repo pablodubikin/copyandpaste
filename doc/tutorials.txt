@@ -1,0 +1,17 @@
+Jsf stuff
+
+- Setting up jsf 2.0: https://www.javacodegeeks.com/2018/03/jsf-2-0-tutorial-for-beginners.html
+
+- Setting up jsf 2.3: https://medium.com/@mohammadamr/jsf-2-3-primefaces-7-0-a7101c7d2810
+
+- JSF Filter: https://stackoverflow.com/questions/8480100/how-implement-a-login-filter-in-jsf
+
+
+Linux / AWS stuff
+
+- Add user to ec2 instance to enter without key: https://getstart.blog/2018/03/02/how-to-access-ec2-instance-without-pem-file/
+
+- Change the user's login shell: https://askubuntu.com/questions/325807/arrow-keys-home-end-tab-complete-keys-not-working-in-shell
+
+- Redirect port 80 to 8080: https://askubuntu.com/questions/444729/redirect-port-80-to-8080-and-make-it-work-on-local-machine
+

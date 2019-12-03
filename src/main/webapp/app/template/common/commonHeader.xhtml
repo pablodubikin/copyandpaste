@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      >
+    <body>
+	    <ui:composition>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+		<div class="jumbotron navbar-fixed-top pt-1 pb-1 pl-1 mb-1 row" style="max-height: 50px; background: none;">
+			
+				<div class="col ml-2">
+					
+					<div class="my-icon text-center float-left">
+						<div class=" mx-auto">P</div>
+					</div>
+					
+					<i data-toggle="modal" data-target="#aboutModal"
+						class="fas fa-question other-icons float-left mt-2 ml-3"></i>
+					
+				</div>
+				
+				<div class="col mr-0">
+				
+					<i class="fas fa-plus other-icons float-right mt-2"
+						onclick="window.location.assign('/');"></i>
+
+					<i class="fas fa-link other-icons float-right mt-2 mr-3"
+						onclick="copyLink(); $('.copied-tooltip').css('display','block'); setTimeout(function(){$('.copied-tooltip').css('display','none')}, 2000)"></i>
+						
+				 	<div class="copied-tooltip" style="position:absolute; right: 0; display: none;">
+				 		Copied!
+					</div>
+					
+					<i class="fas fa-search other-icons float-right mr-3 mt-2"
+						onclick="$('#search-bar').toggleClass('hidden'); if(!$('#search-bar').hasClass('hidden')) { $('#search-input').focus(); }"></i>
+					
+					<div id="search-bar" class="float-right mr-3 mt-1 hidden">
+						<input id="search-input" 
+							class="form-control form-control-sm" type="number" placeholder="Doc's No. + Enter"
+							onkeyup="navigateToDoc('/'+$(this).val());"></input>
+					</div>
+					
+				</div>
+		</div>
+		
+		
+		<ui:include src="/app/common/modal/modalInfo.xhtml"></ui:include>
+		
+		
+	    </ui:composition>
+    </body>
+</html>
