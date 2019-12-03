@@ -99,11 +99,11 @@ Since this is a server side redirect, the user never sees anything weird. You ca
 
 #### Some View Stuff
 
-Here, I use the classics: *jQuery* and *Bootstrap* (4, for the first time), with (FontAwesome)[https://fontawesome.com/] for icons. 
+Here, I use the classics: *jQuery* and *Bootstrap* (4, for the first time), with [FontAwesome](https://fontawesome.com/) for icons. 
 
 About *FontAwesome* and *JSF*: you have to remember to add the `#{facesContext.externalContext.requestContextPath}` to the urls in its css.
 
-I also used (textarea-line-numbers)[https://github.com/MatheusAvellar/textarea-line-numbers] (cool project) to add the numbers on the left side of the `textarea`.
+I also used [textarea-line-numbers](https://github.com/MatheusAvellar/textarea-line-numbers) to add the numbers on the left side of the `textarea`.
 
 #### Some Other Stuff I'm Missing
 
