@@ -73,7 +73,7 @@ To get around the *shoud I update the textarea?* problem I use [ClientWindow](ht
 Previously known as `PrettyFaces`, [ocpsoft/rewrite](https://github.com/ocpsoft/rewrite) is a cool project which allows you to do mappings like this:
 
 ```
-<url-mapping id="test">
+	<url-mapping id="test">
 		<pattern value="/#{id}" />
 		<view-id value="/app/welcome/welcome.xhtml" />
 	</url-mapping>
