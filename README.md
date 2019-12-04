@@ -63,14 +63,14 @@ I.e.
 > If *user /1* opened a second browser window, entered the same url (/1), and placed it besides his first one, he would see the text updating as he writes.
 >
 
-To get around the *shoud I update the textarea?* problem I use (ClientWindow)[https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/ClientWindow.html], which I get from the `FacesContext` in the bean, and it distinguishes between user's tabs. So I just write down the `ClientWindow`'s id. 
+To get around the *shoud I update the textarea?* problem I use [ClientWindow](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/ClientWindow.html), which I get from the `FacesContext` in the bean, and it distinguishes between user's tabs. So I just write down the `ClientWindow`'s id. 
 
 *What I'm missing* is a way to have `websocket` only send messages to those who should receive them.
 
 
 #### ocpsoft/rewrite
 
-Previously known as `PrettyFaces`, (ocpsoft/rewrite)[https://github.com/ocpsoft/rewrite] is a cool project which allows you to do mappings like this:
+Previously known as `PrettyFaces`, [ocpsoft/rewrite](https://github.com/ocpsoft/rewrite) is a cool project which allows you to do mappings like this:
 
 ```
 <url-mapping id="test">
@@ -79,9 +79,9 @@ Previously known as `PrettyFaces`, (ocpsoft/rewrite)[https://github.com/ocpsoft/
 	</url-mapping>
 ```
 
-So, instead of having an ugly url like www.whatever.com/app/welcome.xhtml?id=123, we have a simple one like www.whatever.com/123.
+So, instead of having an ugly url like whatever.com/app/welcome.xhtml?id=123, we have a simple one like whatever.com/123.
 
-An interesting (enough) piece of trivia is that I couldn't make *ocpsoft/rewrite* and *JSF 2.3* work at the same time. So I asked around, and in (this stackoverflow question)[https://stackoverflow.com/q/58721840/3386085], user @selaron found out the problem came from an unimplemented method in some class.
+An interesting (enough) piece of trivia is that I couldn't make *ocpsoft/rewrite* and *JSF 2.3* work at the same time. So I asked around, and in [this stackoverflow question](https://stackoverflow.com/q/58721840/3386085), user @selaron found out the problem came from an unimplemented method in some class.
 
 I forked the project myself and found out it wasn't only that, but *ocpsoft/rewrite*'s `pom.xml` was declaring version `JSV 2.2`. So not only was the method's implementation missing, but it couldn't be added (because *JSF 2.2*'s interface didn't even declare it).
 
