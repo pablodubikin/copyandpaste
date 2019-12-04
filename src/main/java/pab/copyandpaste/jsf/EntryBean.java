@@ -1,4 +1,4 @@
-package pab.showcase.jsf;
+package pab.copyandpaste.jsf;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -22,9 +22,9 @@ import org.apache.commons.logging.LogFactory;
 import org.richfaces.json.JSONException;
 import org.richfaces.json.JSONObject;
 
-import pab.showcase.jsf.ui.ShoulISave;
-import pab.showcase.model.Entry;
-import pab.showcase.model.dao.EntryDao;
+import pab.copyandpaste.jsf.ui.ShoulISave;
+import pab.copyandpaste.model.Entry;
+import pab.copyandpaste.model.dao.EntryDao;
 
 @FacesConfig(version = FacesConfig.Version.JSF_2_3)
 @Named

@@ -1,4 +1,4 @@
-package pab.showcase.jsf.filter;
+package pab.copyandpaste.jsf.filter;
 
 import java.io.IOException;
 
@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import pab.showcase.model.Entry;
-import pab.showcase.model.dao.EntryDao;
+import pab.copyandpaste.model.Entry;
+import pab.copyandpaste.model.dao.EntryDao;
 
 /**
  * This class intercepts the requests, and if they end with /, it creates an Entry in database,

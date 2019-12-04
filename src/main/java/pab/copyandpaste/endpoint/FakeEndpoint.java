@@ -1,4 +1,4 @@
-package pab.showcase.endpoint;
+package pab.copyandpaste.endpoint;
 
 import javax.websocket.Endpoint;
 import javax.websocket.EndpointConfig;

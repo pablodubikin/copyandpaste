@@ -1,4 +1,4 @@
-package pab.showcase.model;
+package pab.copyandpaste.model;
 
 import java.io.Serializable;
 

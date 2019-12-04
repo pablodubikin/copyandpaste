@@ -1,4 +1,4 @@
-package pab.showcase.model.dao;
+package pab.copyandpaste.model.dao;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -6,8 +6,8 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.joda.time.DateTime;
 
-import pab.showcase.hibernate.HibernateUtil;
-import pab.showcase.model.Entry;
+import pab.copyandpaste.hibernate.HibernateUtil;
+import pab.copyandpaste.model.Entry;
 
 /**
  * @author https://examples.javacodegeeks.com/enterprise-java/jsf/jsf-hibernate-crud-example/

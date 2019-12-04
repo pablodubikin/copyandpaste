@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	
-	<class name="pab.showcase.model.Entry" table="entry">
+	<class name="pab.copyandpaste.model.Entry" table="entry">
 		
 		<id name="id" type="java.lang.Integer">
 			<column name="id" />

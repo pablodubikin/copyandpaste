@@ -1,4 +1,4 @@
-package pab.showcase.jsf.ui;
+package pab.copyandpaste.jsf.ui;
 
 import org.joda.time.DateTime;
 
